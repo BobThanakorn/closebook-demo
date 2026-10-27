@@ -1,4 +1,4 @@
-"""Run the Closebook demo: generate -> match -> score -> report.
+"""Run the Closebook demo: generate -> match -> score -> build demo.html.
 
 Exit code 0 only if no anomaly is wrongly cleared and accuracy >= 0.95.
 Scores come from a golden set on synthetic data. They test the matching
@@ -10,12 +10,14 @@ import platform
 import sys
 from datetime import datetime, timezone
 
+import build_demo
 import gen_data
 import matcher
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT, "data")
 OUT_DIR = os.path.join(ROOT, "output")
+DEMO_HTML = os.path.join(ROOT, "demo.html")
 MIN_ACCURACY = 0.95
 AMOUNT_TOL_THB = 1.00
 
@@ -94,11 +96,14 @@ def main():
         json.dump({"score": s, "results": results}, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
+    build_demo.build(results, s, DEMO_HTML)
+
     text = report(s, summary)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     with open(os.path.join(OUT_DIR, "run_log.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(f"Run at {stamp} with Python {platform.python_version()}\n{text}\n")
     print(text)
+    print(f"Wrote {os.path.relpath(DEMO_HTML, ROOT)} and output/results.json")
     return 0 if s["passed"] else 1
 
 
