@@ -1,0 +1,114 @@
+{
+  "LZD-1004": {
+    "label": "MATCHED"
+  },
+  "LZD-1007": {
+    "label": "MATCHED"
+  },
+  "LZD-1010": {
+    "label": "MATCHED"
+  },
+  "LZD-1013": {
+    "label": "MATCHED"
+  },
+  "LZD-1016": {
+    "label": "MATCHED"
+  },
+  "LZD-1019": {
+    "label": "MATCHED"
+  },
+  "LZD-1022": {
+    "label": "MATCHED"
+  },
+  "LZD-1025": {
+    "amount": 89.7,
+    "label": "DUPLICATE_FEE",
+    "orders": 3
+  },
+  "LZD-1028": {
+    "label": "MATCHED",
+    "rounding": -0.9
+  },
+  "LZD-1031": {
+    "amount": 403.32,
+    "label": "SHORT_PAYOUT"
+  },
+  "LZD-1103": {
+    "label": "MATCHED"
+  },
+  "SHP-1004": {
+    "amount": 9579.23,
+    "label": "MISSING_DEPOSIT"
+  },
+  "SHP-1007": {
+    "label": "MATCHED"
+  },
+  "SHP-1010": {
+    "label": "MATCHED"
+  },
+  "SHP-1013": {
+    "label": "MATCHED",
+    "rounding": -0.15
+  },
+  "SHP-1016": {
+    "amount": 6475.91,
+    "label": "MISSING_DEPOSIT"
+  },
+  "SHP-1019": {
+    "amount": 192.3,
+    "label": "REFUND_NOT_NETTED"
+  },
+  "SHP-1022": {
+    "label": "MATCHED"
+  },
+  "SHP-1025": {
+    "label": "MATCHED"
+  },
+  "SHP-1028": {
+    "label": "MATCHED"
+  },
+  "SHP-1031": {
+    "amount": 554.1,
+    "label": "REFUND_NOT_NETTED"
+  },
+  "SHP-1103": {
+    "label": "MATCHED"
+  },
+  "TTS-1004": {
+    "label": "MATCHED"
+  },
+  "TTS-1007": {
+    "label": "MATCHED"
+  },
+  "TTS-1010": {
+    "label": "MATCHED"
+  },
+  "TTS-1013": {
+    "label": "MATCHED"
+  },
+  "TTS-1016": {
+    "label": "MATCHED"
+  },
+  "TTS-1019": {
+    "label": "MATCHED",
+    "rounding": -0.71
+  },
+  "TTS-1022": {
+    "amount": 1268.79,
+    "label": "SHORT_PAYOUT"
+  },
+  "TTS-1025": {
+    "amount": 119.6,
+    "label": "DUPLICATE_FEE",
+    "orders": 4
+  },
+  "TTS-1028": {
+    "label": "MATCHED"
+  },
+  "TTS-1031": {
+    "label": "MATCHED"
+  },
+  "TTS-1103": {
+    "label": "MATCHED"
+  }
+}
