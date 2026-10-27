@@ -1,0 +1,21 @@
+Run at 2026-10-27 17:18:07 UTC with Python 3.14.6
+Closebook demo - scoring against golden set (synthetic data)
+------------------------------------------------------------
+Data                       160 synthetic orders, seed 2026
+Batches checked            33
+Correct labels             33
+Accuracy                   100.00%
+Injected anomalies         8
+Caught                     8/8
+False clears (target 0)    0
+False alarms               0
+Auto-matched               25
+Rounding cases cleared     3/3
+Amounts exact (+-1 THB)    yes
+  DUPLICATE_FEE  LZD-1025   golden     89.70  found     89.70  ok
+  SHORT_PAYOUT   LZD-1031   golden    403.32  found    403.32  ok
+  SHORT_PAYOUT   TTS-1022   golden   1268.79  found   1268.79  ok
+  DUPLICATE_FEE  TTS-1025   golden    119.60  found    119.60  ok
+------------------------------------------------------------
+PASS
+Scored on synthetic data: tests the logic, not real-world accuracy.

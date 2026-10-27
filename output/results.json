@@ -1,0 +1,643 @@
+{
+  "score": {
+    "batches": 33,
+    "correct": 33,
+    "accuracy": 1.0,
+    "injected_anomalies": 8,
+    "caught": 8,
+    "false_clears": 0,
+    "false_alarms": 0,
+    "auto_matched": 25,
+    "rounding_cases_cleared": 3,
+    "amounts_exact": true,
+    "amount_checks": [
+      {
+        "batch_id": "LZD-1025",
+        "label": "DUPLICATE_FEE",
+        "golden": 89.7,
+        "found": 89.7,
+        "exact": true
+      },
+      {
+        "batch_id": "LZD-1031",
+        "label": "SHORT_PAYOUT",
+        "golden": 403.32,
+        "found": 403.32,
+        "exact": true
+      },
+      {
+        "batch_id": "TTS-1022",
+        "label": "SHORT_PAYOUT",
+        "golden": 1268.79,
+        "found": 1268.79,
+        "exact": true
+      },
+      {
+        "batch_id": "TTS-1025",
+        "label": "DUPLICATE_FEE",
+        "golden": 119.6,
+        "found": 119.6,
+        "exact": true
+      }
+    ],
+    "passed": true
+  },
+  "results": [
+    {
+      "batch_id": "LZD-1004",
+      "market": "Lazada",
+      "payout_date": "2026-10-08",
+      "payout": 2106.23,
+      "expected": 2106.23,
+      "diff": 0.0,
+      "orders": 1,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-10",
+      "explain_th": "ยอดโอน 2,106.23 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1004",
+      "market": "Shopee",
+      "payout_date": "2026-10-08",
+      "payout": 9579.23,
+      "expected": 9579.23,
+      "diff": 0.0,
+      "orders": 4,
+      "label": "MISSING_DEPOSIT",
+      "label_th": "ไม่พบเงินเข้าบัญชี",
+      "detail": {
+        "amount": 9579.23
+      },
+      "bank_date": null,
+      "explain_th": "Shopee แจ้งโอนรอบ SHP-1004 จำนวน 9,579.23 บาท วันที่ 8 ต.ค. แต่ยังไม่พบเงินเข้าบัญชีธนาคารภายใน 4 วัน",
+      "actions_th": [
+        "ติดตามยอดโอนกับแพลตฟอร์ม",
+        "ตรวจบัญชีธนาคารอีกครั้ง",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "TTS-1004",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-08",
+      "payout": 3696.23,
+      "expected": 3696.23,
+      "diff": 0.0,
+      "orders": 2,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-10",
+      "explain_th": "ยอดโอน 3,696.23 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1007",
+      "market": "Lazada",
+      "payout_date": "2026-10-11",
+      "payout": 9196.03,
+      "expected": 9196.03,
+      "diff": 0.0,
+      "orders": 7,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-12",
+      "explain_th": "ยอดโอน 9,196.03 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1007",
+      "market": "Shopee",
+      "payout_date": "2026-10-11",
+      "payout": 8954.04,
+      "expected": 8954.04,
+      "diff": 0.0,
+      "orders": 6,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-12",
+      "explain_th": "ยอดโอน 8,954.04 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1007",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-11",
+      "payout": 6562.42,
+      "expected": 6562.42,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-11",
+      "explain_th": "ยอดโอน 6,562.42 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1010",
+      "market": "Lazada",
+      "payout_date": "2026-10-14",
+      "payout": 8377.97,
+      "expected": 8377.97,
+      "diff": 0.0,
+      "orders": 6,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-16",
+      "explain_th": "ยอดโอน 8,377.97 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1010",
+      "market": "Shopee",
+      "payout_date": "2026-10-14",
+      "payout": 10982.48,
+      "expected": 10982.48,
+      "diff": 0.0,
+      "orders": 6,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-15",
+      "explain_th": "ยอดโอน 10,982.48 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1010",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-14",
+      "payout": 7722.04,
+      "expected": 7722.04,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-16",
+      "explain_th": "ยอดโอน 7,722.04 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1013",
+      "market": "Lazada",
+      "payout_date": "2026-10-17",
+      "payout": 598.75,
+      "expected": 598.75,
+      "diff": 0.0,
+      "orders": 1,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-17",
+      "explain_th": "ยอดโอน 598.75 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1013",
+      "market": "Shopee",
+      "payout_date": "2026-10-17",
+      "payout": 10995.41,
+      "expected": 10995.56,
+      "diff": -0.15,
+      "orders": 7,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0,
+        "rounding": -0.15
+      },
+      "bank_date": "2026-10-17",
+      "explain_th": "ยอดโอน 10,995.41 บาท ต่างจากรายการ -0.15 บาท อยู่ในเกณฑ์ปัดเศษ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1013",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-17",
+      "payout": 5383.42,
+      "expected": 5383.42,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-19",
+      "explain_th": "ยอดโอน 5,383.42 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1016",
+      "market": "Lazada",
+      "payout_date": "2026-10-20",
+      "payout": 8498.15,
+      "expected": 8498.15,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-22",
+      "explain_th": "ยอดโอน 8,498.15 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1016",
+      "market": "Shopee",
+      "payout_date": "2026-10-20",
+      "payout": 6475.91,
+      "expected": 6475.91,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MISSING_DEPOSIT",
+      "label_th": "ไม่พบเงินเข้าบัญชี",
+      "detail": {
+        "amount": 6475.91
+      },
+      "bank_date": null,
+      "explain_th": "Shopee แจ้งโอนรอบ SHP-1016 จำนวน 6,475.91 บาท วันที่ 20 ต.ค. แต่ยังไม่พบเงินเข้าบัญชีธนาคารภายใน 4 วัน",
+      "actions_th": [
+        "ติดตามยอดโอนกับแพลตฟอร์ม",
+        "ตรวจบัญชีธนาคารอีกครั้ง",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "TTS-1016",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-20",
+      "payout": 5792.6,
+      "expected": 5792.6,
+      "diff": 0.0,
+      "orders": 3,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-20",
+      "explain_th": "ยอดโอน 5,792.60 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1019",
+      "market": "Lazada",
+      "payout_date": "2026-10-23",
+      "payout": 4013.98,
+      "expected": 4013.98,
+      "diff": 0.0,
+      "orders": 3,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-23",
+      "explain_th": "ยอดโอน 4,013.98 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1019",
+      "market": "Shopee",
+      "payout_date": "2026-10-23",
+      "payout": 12286.33,
+      "expected": 12094.03,
+      "diff": 192.3,
+      "orders": 9,
+      "label": "REFUND_NOT_NETTED",
+      "label_th": "ยังไม่หักเงินคืนลูกค้า",
+      "detail": {
+        "amount": 192.3,
+        "refunds": 192.3
+      },
+      "bank_date": "2026-10-23",
+      "explain_th": "Shopee โอนรอบ SHP-1019 มา 12,286.33 บาท มากกว่าที่ควรได้ 192.30 บาท ซึ่งเท่ากับยอดคืนเงินลูกค้าในรอบนี้ แพลตฟอร์มอาจหักคืนในรอบถัดไป",
+      "actions_th": [
+        "กันเงินไว้รอแพลตฟอร์มหักคืน",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "TTS-1019",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-23",
+      "payout": 4690.28,
+      "expected": 4690.99,
+      "diff": -0.71,
+      "orders": 4,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0,
+        "rounding": -0.71
+      },
+      "bank_date": "2026-10-23",
+      "explain_th": "ยอดโอน 4,690.28 บาท ต่างจากรายการ -0.71 บาท อยู่ในเกณฑ์ปัดเศษ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1022",
+      "market": "Lazada",
+      "payout_date": "2026-10-26",
+      "payout": 7839.22,
+      "expected": 7839.22,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-28",
+      "explain_th": "ยอดโอน 7,839.22 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1022",
+      "market": "Shopee",
+      "payout_date": "2026-10-26",
+      "payout": 16170.83,
+      "expected": 16170.83,
+      "diff": 0.0,
+      "orders": 11,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-27",
+      "explain_th": "ยอดโอน 16,170.83 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1022",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-26",
+      "payout": 9388.57,
+      "expected": 10657.36,
+      "diff": -1268.79,
+      "orders": 7,
+      "label": "SHORT_PAYOUT",
+      "label_th": "ยอดโอนขาด",
+      "detail": {
+        "amount": 1268.79
+      },
+      "bank_date": "2026-10-27",
+      "explain_th": "TikTok Shop โอนรอบ TTS-1022 มา 9,388.57 บาท แต่ตามรายการชำระเงินควรได้ 10,657.36 บาท ขาดไป 1,268.79 บาท",
+      "actions_th": [
+        "ยื่นเคลมยอดที่ขาด",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "LZD-1025",
+      "market": "Lazada",
+      "payout_date": "2026-10-29",
+      "payout": 2887.11,
+      "expected": 2887.11,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "DUPLICATE_FEE",
+      "label_th": "ค่าธรรมเนียมถูกหักซ้ำ",
+      "detail": {
+        "amount": 89.7,
+        "orders": 3
+      },
+      "bank_date": "2026-10-30",
+      "explain_th": "Lazada รอบ LZD-1025 หักค่าแคมเปญซ้ำ 3 คำสั่งซื้อ รวม 89.70 บาท ยอดโอน 2,887.11 บาท ตรงกับรายการ แต่รายการมีค่าธรรมเนียมเดียวกันสองครั้ง",
+      "actions_th": [
+        "ยื่นเคลมค่าธรรมเนียมที่ซ้ำ",
+        "บันทึกเป็นค่าธรรมเนียม",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "SHP-1025",
+      "market": "Shopee",
+      "payout_date": "2026-10-29",
+      "payout": 10117.1,
+      "expected": 10117.1,
+      "diff": 0.0,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-10-29",
+      "explain_th": "ยอดโอน 10,117.10 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1025",
+      "market": "TikTok Shop",
+      "payout_date": "2026-10-29",
+      "payout": 8451.27,
+      "expected": 8451.27,
+      "diff": 0.0,
+      "orders": 6,
+      "label": "DUPLICATE_FEE",
+      "label_th": "ค่าธรรมเนียมถูกหักซ้ำ",
+      "detail": {
+        "amount": 119.6,
+        "orders": 4
+      },
+      "bank_date": "2026-10-30",
+      "explain_th": "TikTok Shop รอบ TTS-1025 หักค่าแคมเปญซ้ำ 4 คำสั่งซื้อ รวม 119.60 บาท ยอดโอน 8,451.27 บาท ตรงกับรายการ แต่รายการมีค่าธรรมเนียมเดียวกันสองครั้ง",
+      "actions_th": [
+        "ยื่นเคลมค่าธรรมเนียมที่ซ้ำ",
+        "บันทึกเป็นค่าธรรมเนียม",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "LZD-1028",
+      "market": "Lazada",
+      "payout_date": "2026-11-01",
+      "payout": 6475.94,
+      "expected": 6476.84,
+      "diff": -0.9,
+      "orders": 5,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0,
+        "rounding": -0.9
+      },
+      "bank_date": "2026-11-03",
+      "explain_th": "ยอดโอน 6,475.94 บาท ต่างจากรายการ -0.90 บาท อยู่ในเกณฑ์ปัดเศษ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1028",
+      "market": "Shopee",
+      "payout_date": "2026-11-01",
+      "payout": 9676.99,
+      "expected": 9676.99,
+      "diff": 0.0,
+      "orders": 7,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-11-02",
+      "explain_th": "ยอดโอน 9,676.99 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1028",
+      "market": "TikTok Shop",
+      "payout_date": "2026-11-01",
+      "payout": 4603.2,
+      "expected": 4603.2,
+      "diff": 0.0,
+      "orders": 2,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-11-02",
+      "explain_th": "ยอดโอน 4,603.20 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1031",
+      "market": "Lazada",
+      "payout_date": "2026-11-04",
+      "payout": 5210.81,
+      "expected": 5614.13,
+      "diff": -403.32,
+      "orders": 3,
+      "label": "SHORT_PAYOUT",
+      "label_th": "ยอดโอนขาด",
+      "detail": {
+        "amount": 403.32
+      },
+      "bank_date": "2026-11-05",
+      "explain_th": "Lazada โอนรอบ LZD-1031 มา 5,210.81 บาท แต่ตามรายการชำระเงินควรได้ 5,614.13 บาท ขาดไป 403.32 บาท",
+      "actions_th": [
+        "ยื่นเคลมยอดที่ขาด",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "SHP-1031",
+      "market": "Shopee",
+      "payout_date": "2026-11-04",
+      "payout": 10730.16,
+      "expected": 10176.06,
+      "diff": 554.1,
+      "orders": 6,
+      "label": "REFUND_NOT_NETTED",
+      "label_th": "ยังไม่หักเงินคืนลูกค้า",
+      "detail": {
+        "amount": 554.1,
+        "refunds": 554.1
+      },
+      "bank_date": "2026-11-06",
+      "explain_th": "Shopee โอนรอบ SHP-1031 มา 10,730.16 บาท มากกว่าที่ควรได้ 554.10 บาท ซึ่งเท่ากับยอดคืนเงินลูกค้าในรอบนี้ แพลตฟอร์มอาจหักคืนในรอบถัดไป",
+      "actions_th": [
+        "กันเงินไว้รอแพลตฟอร์มหักคืน",
+        "ถามนักบัญชี"
+      ]
+    },
+    {
+      "batch_id": "TTS-1031",
+      "market": "TikTok Shop",
+      "payout_date": "2026-11-04",
+      "payout": 3795.43,
+      "expected": 3795.43,
+      "diff": 0.0,
+      "orders": 3,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-11-06",
+      "explain_th": "ยอดโอน 3,795.43 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "LZD-1103",
+      "market": "Lazada",
+      "payout_date": "2026-11-07",
+      "payout": 7455.54,
+      "expected": 7455.54,
+      "diff": 0.0,
+      "orders": 4,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-11-09",
+      "explain_th": "ยอดโอน 7,455.54 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "SHP-1103",
+      "market": "Shopee",
+      "payout_date": "2026-11-07",
+      "payout": 5963.16,
+      "expected": 5963.16,
+      "diff": 0.0,
+      "orders": 4,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-11-08",
+      "explain_th": "ยอดโอน 5,963.16 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    },
+    {
+      "batch_id": "TTS-1103",
+      "market": "TikTok Shop",
+      "payout_date": "2026-11-07",
+      "payout": 4513.19,
+      "expected": 4513.19,
+      "diff": 0.0,
+      "orders": 3,
+      "label": "MATCHED",
+      "label_th": "ตรงกัน",
+      "detail": {
+        "amount": 0.0
+      },
+      "bank_date": "2026-11-07",
+      "explain_th": "ยอดโอน 4,513.19 บาท ตรงกับรายการ และพบเงินเข้าบัญชีแล้ว",
+      "actions_th": []
+    }
+  ]
+}
