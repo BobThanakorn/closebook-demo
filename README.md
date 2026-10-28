@@ -11,6 +11,10 @@ loop, on **synthetic data**:
 > Synthetic data. Fee rates are illustrative. Matching is deterministic code;
 > no LLM calculates any number.
 
+**Try it:** [live demo](https://bobthanakorn.github.io/closebook-demo/demo.html)
+(opens in the browser, nothing to install; best viewed on a phone-width screen too).
+Landing page for the prototype: [closebook-site](https://github.com/BobThanakorn/closebook-site).
+
 ## What it shows
 
 Running the demo generates one imaginary seller's October 2026 orders
@@ -34,10 +38,22 @@ Latest run (see `output/run_log.txt`):
 **These numbers test the matching logic on synthetic data that the same repo
 generated. They are not accuracy on real sellers and not customer results.**
 
-`demo.html` opens from disk and shows the honesty banner, summary tiles, a
-"Needs the owner" feed of LINE-style cards (tapping an action replaces the
-buttons with "done, awaiting accountant approval" and lowers the open count),
-and a table of every batch.
+`demo.html` opens from disk and is written Thai-first (the title, banner and
+footer sentence stay in English). It shows:
+
+- the honesty banner and a progress panel ("8 items need you", with a bar for
+  auto-matched / handed to the accountant / waiting on you);
+- six summary tiles, including anomalies caught and wrongly cleared (target 0);
+- a "Needs the owner" feed of LINE-style cards. Each card shows paid vs
+  expected vs the finding, a Thai explanation and 2 to 3 action buttons.
+  Tapping one replaces the buttons with "done, awaiting accountant approval"
+  and lowers the open count; "เลิกทำ" (undo) brings the buttons back;
+- a table of every batch with filters (all / needs checking, by marketplace).
+  Tapping a batch ID jumps to its card. On a phone the table becomes stacked cards.
+
+Layout was checked with headless Edge at 320 to 1280 px wide (no horizontal
+scroll, tap targets at least 44 px). It has not been tested on a physical phone.
+The buttons only change the page; nothing is sent to an accountant.
 
 ## How to run
 
